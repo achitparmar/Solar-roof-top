@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Solar Rebates Australia | STC & State Specific Guides">
+  <main class="py-20">
+    <div class="container mx-auto px-4">
+      <nav class="mb-8">
+        <a href="/" class="text-orange-500 hover:text-orange-600 flex items-center gap-2">
+          ← Back to Home
+        </a>
+      </nav>
+
+      <div class="max-w-4xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
+          Solar Rebates: How to Claim Your Discount
+        </h1>
+        <p class="text-xl text-slate-600 mb-12">
+          The "Solar Rebate" is actually a federal government incentive called STCs. Understanding how it works can save you over $3,000 on your installation.
+        </p>
+
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold mb-6">What are STCs?</h2>
+          <p class="text-slate-600 mb-6">
+            Small-scale Technology Certificates (STCs) are an electronic form of currency created by the Renewable Energy Target. When you install solar, you are "creating" these certificates based on how much renewable energy your system will generate over the next decade.
+          </p>
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl">
+            <h3 class="font-bold text-blue-900 mb-2">The Golden Rule</h3>
+            <p class="text-blue-800">You don't have to sell these yourself. We calculate the value and apply it as an **instant discount** on your quote. You only pay the "net" amount.</p>
+          </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold mb-8">State-Specific Incentives</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+              <h3 class="text-xl font-bold mb-3">Queensland (QLD)</h3>
+              <p class="text-slate-600">While there isn't a direct "cash" rebate like VIC, QLD homeowners benefit from some of the highest feed-in tariffs in the country and specific interest-free loans for batteries.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+              <h3 class="text-xl font-bold mb-3">New South Wales (NSW)</h3>
+              <p class="text-slate-600">The "Solar for Low Income Households" program can help eligible residents swap their energy rebate for a free 3kW solar system.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold mb-8">Feed-in Tariff (FiT) Comparison</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="p-4 border border-slate-200 font-bold">Retailer</th>
+                  <th class="p-4 border border-slate-200 font-bold">Standard FiT</th>
+                  <th class="p-4 border border-slate-200 font-bold">Premium FiT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-4 border border-slate-200">Origin Energy</td>
+                  <td class="p-4 border border-slate-200">5.0c / kWh</td>
+                  <td class="p-4 border border-slate-200">12.0c / kWh*</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="p-4 border border-slate-200">AGL</td>
+                  <td class="p-4 border border-slate-200">7.0c / kWh</td>
+                  <td class="p-4 border border-slate-200">15.0c / kWh*</td>
+                </tr>
+                <tr>
+                  <td class="p-4 border border-slate-200">EnergyAustralia</td>
+                  <td class="p-4 border border-slate-200">6.6c / kWh</td>
+                  <td class="p-4 border border-slate-200">10.0c / kWh*</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-slate-400 mt-4">*Premium rates often require signing up for specific VPP or Solar plans.</p>
+        </section>
+
+        <div class="text-center bg-orange-50 rounded-2xl p-12 border-2 border-orange-100">
+          <h2 class="text-2xl font-bold mb-4">How much can you claim?</h2>
+          <p class="text-slate-600 mb-8">The STC value drops every year on January 1st. Lock in your current rate before it decreases.</p>
+          <a href="/#quote" class="inline-block bg-orange-500 text-white font-bold px-8 py-4 rounded-xl hover:bg-orange-600 transition-all">
+            Check My Eligibility
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

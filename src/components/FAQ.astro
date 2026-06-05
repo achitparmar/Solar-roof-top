@@ -1,0 +1,45 @@
+---
+const faqs = [
+  {
+    question: "Will solar void my roof warranty?",
+    answer: "No. We use specialized mounting systems (like IronRidge or Clenergy) that maintain the integrity of your roof. Our CEC installers are trained to ensure all penetrations are sealed and waterproofed, often exceeding Australian standards."
+  },
+  {
+    question: "What happens during a blackout?",
+    answer: "Most standard solar systems shut down during a blackout for safety reasons (anti-islanding). However, if you choose a system with 'Blackout Protection' (like Enphase or a hybrid battery system), your home will stay powered even when the grid goes down."
+  },
+  {
+    question: "How do I know if my installer is legitimate?",
+    answer: "Always ask for their Clean Energy Council (CEC) Accreditation number and their Electrical Contractor License. You can verify these on the CEC website. We display our license numbers prominently on every quote."
+  },
+  {
+    question: "What if your company goes out of business?",
+    answer: "We use Tier-1 manufacturers (Fronius, Jinko, etc.) who provide 'Manufacturer Warranties.' Even if we weren't here, the manufacturer handles the product warranty directly. Plus, our workmanship is backed by a major insurance policy."
+  },
+  {
+    question: "Will my system work on cloudy days?",
+    answer: "Yes! While output is lower than on a bright sunny day, modern Tier-1 panels are highly efficient and will still generate significant power during Brisbane's cloudy or rainy spells."
+  }
+];
+---
+
+<section class="py-20 bg-slate-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Hard Questions, Direct Answers</h2>
+      <div class="space-y-6">
+        {faqs.map((faq) => (
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200 transition-colors">
+            <h3 class="text-lg font-bold text-slate-900 mb-3 flex gap-3">
+              <span class="text-orange-500 text-xl font-black">?</span>
+              {faq.question}
+            </h3>
+            <p class="text-slate-600 leading-relaxed pl-7">
+              {faq.answer}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

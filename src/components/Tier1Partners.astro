@@ -1,0 +1,59 @@
+---
+const partners = [
+  { name: "Jinko Solar" },
+  { name: "Trina Solar" },
+  { name: "Canadian Solar" },
+  { name: "LONGi" },
+  { name: "Sungrow" },
+  { name: "Fronius" },
+  { name: "Enphase" },
+  { name: "Qcells" },
+  { name: "REC Group" },
+  { name: "SMA" }
+];
+
+// Duplicate the list so it scrolls seamlessly
+const marqueePartners = [...partners, ...partners];
+---
+
+<section class="py-12 bg-slate-50 border-y border-slate-200 overflow-hidden">
+  <div class="container mx-auto px-4 mb-8 text-center">
+    <h3 class="text-sm font-bold tracking-widest text-slate-400 uppercase">Our Tier-1 Equipment Partners</h3>
+  </div>
+  
+  <div class="marquee-container relative w-full flex overflow-hidden">
+    <!-- Gradient Overlays for smooth fade out at edges -->
+    <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
+    <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
+
+    <div class="marquee-content flex gap-8 whitespace-nowrap items-center w-max">
+      {marqueePartners.map((partner, index) => (
+        <div class="flex items-center justify-center w-48 h-20 bg-white rounded-xl border border-slate-200 shadow-sm shrink-0 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+          <span class="text-xl font-black text-slate-800 tracking-tight">{partner.name}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Define the scroll animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Scroll half the width since we duplicated the items */
+      transform: translateX(-50%);
+    }
+  }
+
+  .marquee-content {
+    animation: scroll 40s linear infinite;
+  }
+  
+  /* Pause animation on hover */
+  .marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+  }
+</style>
