@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 - Page Not Found | Solar Brisbane">
+  <main class="min-h-[80vh] flex items-center justify-center py-20 bg-slate-50 relative overflow-hidden">
+    <!-- Background Decoration -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-orange-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+    
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <!-- Logo -->
+      <div class="flex justify-center mb-12">
+        <a href="/" class="flex items-center gap-3">
+          <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-white font-bold text-3xl shadow-xl shadow-orange-500/20">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z"></path></svg>
+          </div>
+        </a>
+      </div>
+
+      <!-- Content -->
+      <div class="max-w-2xl mx-auto">
+        <h1 class="text-6xl md:text-8xl font-black text-slate-900 mb-6 tracking-tighter">Oops!</h1>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-8 leading-tight">
+          Wrong page, but don't worry...
+        </h2>
+        <p class="text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed font-medium">
+          Your thousands of dollars in <span class="text-orange-600 font-bold underline decoration-orange-500/30">solar savings</span> are still waiting for you!
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a 
+            href="/#contact" 
+            class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-2xl font-black text-lg transition-all shadow-xl shadow-orange-500/30 hover:-translate-y-1"
+          >
+            Claim Your Savings Now
+          </a>
+          <a 
+            href="/" 
+            class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 px-10 py-4 rounded-2xl font-bold text-lg border-2 border-slate-200 transition-all hover:-translate-y-1"
+          >
+            Back to Homepage
+          </a>
+        </div>
+
+        <p class="mt-16 text-slate-400 font-medium">
+          Error Code: 404 (Sunshine Not Found)
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
